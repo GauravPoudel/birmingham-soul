@@ -13,6 +13,10 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        heading: ['"Playfair Display"', 'Georgia', 'serif'],
+        body: ['"DM Sans"', 'system-ui', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -47,6 +51,32 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        sage: {
+          DEFAULT: "hsl(var(--sage))",
+          light: "hsl(var(--sage-light))",
+          dark: "hsl(var(--sage-dark))",
+        },
+        sand: {
+          DEFAULT: "hsl(var(--sand))",
+          dark: "hsl(var(--sand-dark))",
+        },
+        clay: {
+          DEFAULT: "hsl(var(--clay))",
+          light: "hsl(var(--clay-light))",
+        },
+        mist: "hsl(var(--mist))",
+        stone: "hsl(var(--stone))",
+        cream: "hsl(var(--cream))",
+        forest: "hsl(var(--forest))",
+        chakra: {
+          root: "hsl(var(--chakra-root))",
+          sacral: "hsl(var(--chakra-sacral))",
+          solar: "hsl(var(--chakra-solar))",
+          heart: "hsl(var(--chakra-heart))",
+          throat: "hsl(var(--chakra-throat))",
+          "third-eye": "hsl(var(--chakra-third-eye))",
+          crown: "hsl(var(--chakra-crown))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -65,20 +95,12 @@ export default {
       },
       keyframes: {
         "accordion-down": {
-          from: {
-            height: "0",
-          },
-          to: {
-            height: "var(--radix-accordion-content-height)",
-          },
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
         },
         "accordion-up": {
-          from: {
-            height: "var(--radix-accordion-content-height)",
-          },
-          to: {
-            height: "0",
-          },
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
         },
       },
       animation: {
