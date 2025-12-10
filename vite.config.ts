@@ -20,7 +20,7 @@ export default defineConfig(({ mode }) => {
       },
     },
     // Set base path for GitHub Pages
-    base: mode === 'production' ? `/${env.VITE_REPO_NAME || 'your-repo-name'}/` : '/',
+    base: mode === 'production' ? `/${env.VITE_REPO_NAME || 'birmingham-soul'}/` : '/',
     build: {
       outDir: 'dist',
       sourcemap: false,
